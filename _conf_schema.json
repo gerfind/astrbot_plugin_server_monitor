@@ -1,0 +1,60 @@
+{
+    "admin_only": {
+              "description": "设置是否仅管理员可调用",
+              "type": "bool",
+              "default": true
+    },
+    "default_time": {
+            "description": "默认查询时间(min)",
+            "type": "int",
+            "default": 10
+    },
+    "simple_interval": {
+            "description": "采样间隔(s)",
+            "type": "int",
+            "default": 10
+    },
+    "max_history_minutes": {
+            "description": "最长记录时间(min)",
+            "type": "int",
+            "default": 60
+    },
+    "alert": {
+    "description": "阈值告警配置",
+    "type": "object",
+    "items": {
+      "thresholds": {
+        "description": "各项指标阈值",
+        "type": "object",
+        "items": {
+          "cpu": {
+            "description": "CPU 使用率阈值 (%)",
+            "type": "float",
+            "default": 90
+          },
+          "mem": {
+            "description": "内存使用率阈值 (%)",
+            "type": "float",
+            "default": 90
+          },
+          "net": {
+            "description": "网络速率阈值 (KB/s)",
+            "type": "float",
+            "default": 1024
+          },
+          "load": {
+            "description": "系统 1min 负载阈值",
+            "type": "float",
+            "default": 1.5
+          }
+        }
+      },
+      "count": {
+        "description": "超过阈值次数后触发告警",
+        "type": "int",
+        "default": 3
+      }
+    }
+  }
+    
+}

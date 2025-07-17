@@ -1,0 +1,6 @@
+name: server_status_monitor # 这是你的插件的唯一识别名。
+desc: Linux服务器状态监控插件，持续监控服务器状态，并可在服务器状态到达阈值时提醒
+help: 提供详细的可视化服务器近期状态的卡片（包括Cpu/Mem/网络流量），通过/status [时间(min)]或/状态查询 [时间(min)]，并可设置到达阈值后提醒
+version: v1.0
+author: AoiInazuma
+repo: https://github.com/gerfind/astrbot_plugin_server_monitor
