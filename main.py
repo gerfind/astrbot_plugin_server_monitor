@@ -73,11 +73,6 @@ class ServerMonitor(Star):
         if m: parts.append(f"{m}分")
         return "".join(parts) or "0分"
 
-    def conditional_decorator(decorator, condition):
-        def _wrapper(func):
-            return decorator(func) if condition else func
-        return _wrapper
-
     async def _monitor_loop(self):
         last_net = psutil.net_io_counters()
         while True:
