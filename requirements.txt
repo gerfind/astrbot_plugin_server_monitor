@@ -1,2 +1,5 @@
 psutil
 matplotlib
+rich
+cairosvg
+Pillow
