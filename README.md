@@ -1,4 +1,4 @@
-# astrbot_plugin_server
+# astrbot_plugin_server_monitor
 # AstrBot 服务器状态监控插件
 
 [![License](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
@@ -23,8 +23,10 @@
 
 ### 基础命令
 ```plaintext
-/状态查询  或  /status                 查询默认时间段内的服务器状态
-/状态查询 [数字]  或  /status [数字]    查询指定时间段内的服务器状态（单位分钟）
+/server status                查询默认时间段内的服务器状态
+/server status [数字]         查询指定时间段内的服务器状态（单位分钟）
+/server service [指定服务名]   查询指定服务的状态
+/server service               查询配置里面的服务的状态
 ```
 
 ## 🤝 参与贡献
